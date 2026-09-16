@@ -58,7 +58,7 @@ if st.button("🚀 Enviar a auditoría", type="primary", disabled=not raw_logs):
         })
     except requests.HTTPError as e:
         st.error(f"Error {e.response.status_code}: {e.response.text}")
-    except Exception as e::
+    except Exception as e:
         st.error(f"Error de conexión: {e}")
 
 # --------------------------------------------------------------------------- #
